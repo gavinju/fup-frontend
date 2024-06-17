@@ -31,10 +31,8 @@
       <Form :model="formData">
         <Row :gutter="32">
           <FormItem label="类型" label-position="top" style="width: 95%; margin-left: 18px">
-            <Select v-model="formData.type" placeholder="请选择类型">
-              <Option value="图片">图片</Option>
-              <Option value="文件">文件</Option>
-              <Option value="Excel">Excel</Option>
+            <Select v-model="formData.type" placeholder="请选择类型">              
+              <Option value="文件">文件</Option>              
             </Select>
           </FormItem>
         </Row>
@@ -97,7 +95,7 @@ export default {
       addVisible: false, //文件上传窗口
       // 文件上传表单
       formData: {
-        type: '图片',
+        type: '文件',
         description: '',
       },
       uploadFile: null,

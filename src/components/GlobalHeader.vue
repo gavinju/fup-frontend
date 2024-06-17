@@ -16,25 +16,7 @@
       </Col>
       <Col flex="140px">
         <Row>
-          <router-link to="/user/login">
-            <Avatar class="avatar">{{ loginUser.userName.slice(0, 1) }}</Avatar>
-            <!--<Avatar v-show='loginUser.avatarUrl' class="avatar" :src="loginUser.avatarUrl"></Avatar>-->
-          </router-link>
-          <div>
-            <Dropdown trigger="hover" @on-click="handleSelect">
-              <span style="margin-left: 16px">{{ loginUser.userName ?? '未登录' }}</span>
-              <DropdownMenu slot="list">
-                <DropdownItem name="个人中心"
-                  >个人中心
-                  <Icon type="md-contact" />
-                </DropdownItem>
-                <DropdownItem name="退出账号"
-                  >退出账号
-                  <Icon type="md-backspace" />
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </div>
+          
         </Row>
       </Col>
     </Row>
@@ -49,7 +31,7 @@ import checkAccess from '@/access/checkAccess'
 export default {
   data() {
     return {
-      title: 'file-cloud',
+      title: 'File Upload',
     }
   },
   computed: {

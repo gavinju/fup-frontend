@@ -9,7 +9,7 @@
         <Content id="content">
           <router-view />
         </Content>
-        <Footer><a href="https://gitee.com/liang-tian-yu" target="_blank">file-cloud by lty</a></Footer>
+        <Footer><a href="#" target="_blank"> </a></Footer>
       </Layout>
     </Layout>
   </div>

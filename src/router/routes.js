@@ -16,22 +16,6 @@ export const appRouter = [
   { path: 'home', name: '主页', component: HomeView },
   { path: 'file', name: '文件', component: FileView },
   { path: 'test', name: '测试页', component: TestView },
-  {
-    path: 'admin',
-    name: '管理员页面',
-    component: AdminView,
-    meta: {
-      access: ACCESS_ENUM.ADMIN,
-    },
-  },
-  {
-    path: '/space',
-    name: '个人中心',
-    component: UserSpace,
-    meta: {
-      hideInMenu: true,
-    },
-  },
 ]
 
 export const routes = [
@@ -40,26 +24,6 @@ export const routes = [
     component: BasicLayout,
     redirect: '/file',
     children: appRouter,
-  },
-  {
-    path: '/user',
-    name: '用户',
-    component: UserLayout,
-    children: [
-      {
-        path: 'login',
-        name: '用户登录',
-        component: UserLoginView,
-      },
-      {
-        path: 'register',
-        name: '用户注册',
-        component: UserRegisterView,
-      },
-    ],
-    meta: {
-      hideInMenu: true,
-    },
   },
   {
     path: '/403',
