@@ -11,7 +11,7 @@ module.exports = defineConfig({
     proxy: {
       '/api': {
         // 要代理的地址
-        target: 'http://192.168.180.128:8096',
+        target: 'http://192.168.180.128:8066',
         // 配置了这个可以从 http 代理到 https
         // 依赖 origin 的功能可能需要这个，比如 cookie
         changeOrigin: true,
