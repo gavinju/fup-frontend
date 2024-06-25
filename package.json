@@ -1,7 +1,7 @@
 {
   "name": "FileUpload",
   "version": "1.0.0",
-  "author": "lty",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve --mode dev",
