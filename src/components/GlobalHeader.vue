@@ -4,7 +4,6 @@
       <Col flex="auto">
         <Row :wrap="false">
           <div class="title-bar">
-            <img class="logo" src="../assets/logo.png" />
             <div class="title">{{ title }}</div>
           </div>
           <Menu mode="horizontal" theme="dark" @on-select="selectMenu">

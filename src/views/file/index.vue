@@ -212,25 +212,6 @@ export default {
                 'Button',
                 {
                   props: {
-                    type: 'primary',
-                    size: 'small',
-                    ghost: true,
-                  },
-                  style: {
-                    marginRight: '5px',
-                  },
-                  on: {
-                    click: () => {
-                      this.update(params.row)
-                    },
-                  },
-                },
-                '修改',
-              ),
-              h(
-                'Button',
-                {
-                  props: {
                     type: 'error',
                     size: 'small',
                     ghost: true,
